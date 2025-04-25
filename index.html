@@ -18,6 +18,19 @@
   <br />
   <div>
       <input id="button" type="button" value="Click Me!"/>
+      <script>
+        function addingEventListener() {
+          const input = document.getElementById('button');
+    
+          function clickAlert() {
+            alert('I was clicked!');
+          }
+    
+          input.addEventListener('click', clickAlert);
+        }
+    
+        addingEventListener();
+      </script>
   </div>
   <br />
   <div>
